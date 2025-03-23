@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOSPHERE - Order Your Favourite Food</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>ECOSPHERE</h1>
+        <p>Order your favourite food!</p>
+      <div class="profile-icon" onclick="redirectToProfile()">👤</div>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>🔍</button>
+    </div>
+
+    <div class="categories">
+        <button>ALL</button>
+        <button>COMBO</button>
+        <button>SIDES</button>
+        <button>PIZZA</button>
+    </div>
+
+    <div class="food-container">
+        <div class="food-card">
+            <img src="burger.jpg" alt="Cheese Burger">
+            <p>Cheese Burger</p>
+            <span class="rating">⭐ 4.9</span>
+            <span class="heart" onclick="toggleFavorite(this)">♡</span>
+        </div>
+
+        <div class="food-card">
+            <img src="pizza.jpg" alt="Pizza">
+            <p>Pizza</p>
+            <span class="rating">⭐ 4.5</span>
+            <span class="heart" onclick="toggleFavorite(this)">♡</span>
+        </div>
+
+        <div class="food-card">
+            <img src="combo.jpg" alt="Combo">
+            <p>Combo</p>
+            <span class="rating">⭐ 4.6</span>
+            <span class="heart" onclick="toggleFavorite(this)">♡</span>
+        </div>
+
+        <div class="food-card">
+            <img src="garlic .jpg" alt="Sides">
+            <p>Sides</p>
+            <span class="rating">⭐ 4.1</span>
+            <span class="heart" onclick="toggleFavorite(this)">♡</span>
+        </div>
+    </div>
+
+    <footer>
+        <button>🏠</button>
+        <button>➕</button>
+        <button>⚙️</button>
+    </footer>
+
+</body>
+</html>

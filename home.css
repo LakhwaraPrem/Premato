@@ -1,0 +1,124 @@
+/* Color Theme */
+:root {
+    --primary-dark: #030A1C;
+    --secondary-dark: #051024;
+    --accent-dark: #061831;
+    --button-color: #0B1C3E;
+    --text-color: #FFFFFF;
+    --highlight-color: #11244A;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-dark);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 15px;
+    background-color: var(--secondary-dark);
+    position: relative;
+}
+
+.profile-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: var(--accent-dark);
+    color: var(--text-color);
+}
+
+.search-bar button {
+    background: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    background: var(--highlight-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.food-card {
+    background: var(--secondary-dark);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.food-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: var(--accent-dark);
+}
+
+.rating {
+    display: block;
+    margin: 5px 0;
+}
+
+.heart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+footer {
+    background: var(--secondary-dark);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+}
